@@ -15,7 +15,7 @@ namespace KnabWeb.Controllers
 
 		private readonly IExchangeRateService exchangeRateService;
 
-		public RatesController(IExchangeRateService rateService) => (exchangeRateService) = rateService;		
+		public RatesController(IExchangeRateService rateService) => exchangeRateService = rateService;		
 
 		[HttpGet]
 		public async Task<IActionResult> Get(string code)
